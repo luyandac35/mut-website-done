@@ -1,0 +1,18 @@
+CREATE DATABASE IF NOT EXISTS mut_website;
+USE mut_website;
+
+CREATE TABLE IF NOT EXISTS users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    fullname VARCHAR(100) NOT NULL,
+    email VARCHAR(120) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    role VARCHAR(30) DEFAULT 'student',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS chatbot_logs (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_message TEXT,
+    bot_reply TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

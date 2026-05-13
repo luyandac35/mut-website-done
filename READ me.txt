@@ -1,0 +1,76 @@
+README DOCUMENT – MUT ICT Department Smart Web Application
+This document provides the installation guide, project overview, system setup instructions, database configuration, and project execution steps for the MUT ICT Department Smart Web Application.
+1. Project Overview
+The MUT ICT Department Smart Web Application is a modern educational website developed for Mangosuthu University of Technology (MUT) ICT students. The system provides online access to ICT program information, student services, smart search, chatbot support, login and registration functionality, and a student dashboard.
+2. Technologies Used
+- HTML5
+- CSS3
+- JavaScript
+- Node.js
+- Express.js
+- MySQL
+- WebSocket
+- bcryptjs
+- express-session
+3. Features
+- Student Login System
+- Student Registration System
+- Smart Search Functionality
+- AI Chatbot Assistant
+- Student Dashboard
+- ICT Programs Information
+- Career Paths Page
+- Student Life Gallery
+- Testimonials Section
+- Contact and Appointment Booking
+- Real-time Notices
+- Responsive Web Design
+4. Installation Instructions
+Step 1: Clone the Repository
+git clone https://github.com/yourusername/mut-ict-website.git
+
+Step 2: Open the Project Folder
+cd mut-ict-website
+
+Step 3: Install Packages
+npm install
+
+OR install manually:
+npm install express express-session mysql2 bcryptjs ws
+5. Database Setup
+Create the database:
+
+CREATE DATABASE mut_website;
+
+Create users table:
+CREATE TABLE users (
+id INT AUTO_INCREMENT PRIMARY KEY,
+fullname VARCHAR(100) NOT NULL,
+email VARCHAR(120) NOT NULL UNIQUE,
+password VARCHAR(255) NOT NULL,
+role VARCHAR(30) DEFAULT 'student'
+);
+6. Running the Project
+Run the server using:
+
+node server.js
+
+OR
+
+npm start
+
+Open browser:
+http://localhost:4000
+7. Security Features
+- Password Encryption
+- Session Authentication
+- Input Validation
+- Secure Login System
+8. Contributors
+Name: Luyanda Cele
+Contribution: Backend Development, Chatbot, Login System
+9. Lecturer Sharing
+Repository and project links must be shared with:
+xpiyose@gmail.com
+10. Video Presentation Link
+Insert your YouTube or Google Drive presentation link here.

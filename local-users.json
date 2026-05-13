@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": 1778671586015,
+      "fullname": "Luyanda",
+      "email": "luyandac35@gmail.com",
+      "password": "$2b$10$7.dLyn6ocIwnh2.APa929enSzbMrYp3twi2oNrKV0SSbP1CXRuvL.",
+      "role": "student",
+      "created_at": "2026-05-13T11:26:26.015Z"
+    },
+    {
+      "id": 1778704363694,
+      "fullname": "mbali",
+      "email": "dubazanambali82@gmail.com",
+      "password": "$2b$10$6u518n3NgUhKCYbpXJtnGuw4lj47o0mTxnppGrv6QuRgKs0MCMU2u",
+      "role": "student",
+      "created_at": "2026-05-13T20:32:43.694Z"
+    },
+    {
+      "id": 1778706720707,
+      "fullname": "Mvelo",
+      "email": "siyamthandatata@gmail.com",
+      "password": "$2b$10$0/diTogyp7VqEKR3Fnqviuydzr2/M/tRBwZ1C73IfW./2LkRPRtkW",
+      "role": "student",
+      "created_at": "2026-05-13T21:12:00.707Z"
+    }
+  ]
+}

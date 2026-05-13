@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | MUT ICT Department</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<header>
+    <div class="logo-container">
+        <img src="mut logo.jpg" alt="MUT Logo" class="logo">
+        <div class="logo-text"><h1>ICT Department</h1><p>Mangosuthu University of Technology</p></div>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="career.html">Career Paths</a></li>
+            <li><a href="gallery.html">Student Life</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html" class="active">Login</a></li>
+            <li><a href="register.html" class="">Register</a></li>
+            <li class="search-container"><i class="fas fa-search" id="searchIcon"></i><div class="search-box" id="searchBox"><input type="text" id="searchInput" placeholder="Search..."><div class="search-results" id="searchResults"></div></div></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="auth-page">
+    <section class="auth-card">
+        <h2>Student Login</h2>
+        <p>Log in to access your MUT ICT student dashboard.</p>
+        <form id="loginForm">
+            <label>Email</label>
+            <input type="email" id="loginEmail" required placeholder="Enter your email">
+            <label>Password</label>
+            <input type="password" id="loginPassword" required placeholder="Enter your password">
+            <button type="submit" class="auth-btn">Login</button>
+        </form>
+        <p id="loginMessage" class="form-message"></p>
+        <p class="auth-link">No account yet? <a href="register.html">Register here</a></p>
+    </section>
+</main>
+
+<button id="chatBtn">Chat 💬</button>
+<div id="chatBox"><div id="chatHeader">Mvelo - MUT ICT Assistant</div><div id="messages"></div><input type="text" id="userInput" placeholder="Ask a question..."><button onclick="sendMessage()">Send</button></div>
+<script src="script.js"></script>
+</body>
+</html>
